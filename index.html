@@ -91,7 +91,7 @@
                 <img src="logo.jpeg" alt="Xenith Executive Search" class="header-logo">
 
                 <nav class="desktop-nav flex items-center gap-8" role="navigation" aria-label="Main navigation">
-                    <a href="#services" class="nav-link">Services</a>
+                    <a href="services.html" class="nav-link">Services</a>
                     <a href="#industries" class="nav-link">Industries</a>
                     <a href="#about" class="nav-link">About</a>
                     <a href="#insights" class="nav-link">Insights</a>
@@ -102,7 +102,7 @@
 
                 <!-- Mobile Navigation -->
                 <nav id="mobile-nav" class="mobile-nav" role="navigation" aria-label="Mobile navigation">
-                    <a href="#services">Services</a>
+                    <a href="services.html">Services</a>
                     <a href="#industries">Industries</a>
                     <a href="#about">About</a>
                     <a href="#insights">Insights</a>
@@ -355,8 +355,185 @@
         </div>
     </section>
 
+    <!-- Premium Contact Form Section -->
+    <section id="contact" class="py-32" style="background: var(--slate);">
+        <div class="container">
+            <div class="text-center mb-20 animate-on-scroll">
+                <h2 class="mb-8">Start Your Executive Search</h2>
+                <p class="text-xl text-platinum max-w-4xl mx-auto font-light leading-relaxed">
+                    Connect with our executive search specialists to discuss your leadership needs. We provide confidential consultations and customized solutions for your organization.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16">
+                <!-- Contact Form -->
+                <div class="glass-card p-8 animate-on-scroll">
+                    <h3 class="text-white text-2xl font-semibold mb-8">Executive Search Inquiry</h3>
+
+                    <form id="contact-form" class="space-y-6" action="#" method="POST">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="form-group">
+                                <label for="firstName" class="form-label">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName" class="form-label">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" class="form-input" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-input">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company" class="form-label">Company *</label>
+                            <input type="text" id="company" name="company" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="title" class="form-label">Your Title</label>
+                            <input type="text" id="title" name="title" class="form-input">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service" class="form-label">Service Interest *</label>
+                            <select id="service" name="service" class="form-input" required>
+                                <option value="">Select a service</option>
+                                <option value="executive-search">Executive Search</option>
+                                <option value="leadership-assessment">Leadership Assessment</option>
+                                <option value="market-intelligence">Market Intelligence</option>
+                                <option value="succession-planning">Succession Planning</option>
+                                <option value="contract-staffing">Contract Staffing</option>
+                                <option value="payroll-services">Payroll Services</option>
+                                <option value="consultation">General Consultation</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="urgency" class="form-label">Timeline</label>
+                            <select id="urgency" name="urgency" class="form-input">
+                                <option value="">Select timeline</option>
+                                <option value="immediate">Immediate (0-30 days)</option>
+                                <option value="short-term">Short-term (1-3 months)</option>
+                                <option value="medium-term">Medium-term (3-6 months)</option>
+                                <option value="long-term">Long-term (6+ months)</option>
+                                <option value="planning">Strategic Planning</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Project Details</label>
+                            <textarea id="message" name="message" rows="4" class="form-input" placeholder="Please describe your executive search needs, target role, industry requirements, or any specific challenges..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="flex items-start gap-3 cursor-pointer">
+                                <input type="checkbox" id="privacy" name="privacy" class="form-checkbox mt-1" required>
+                                <span class="text-platinum text-sm leading-relaxed">
+                                    I agree to Xenith's privacy policy and consent to being contacted regarding executive search services. All inquiries are treated with strict confidentiality. *
+                                </span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg w-full">
+                            Submit Inquiry
+                        </button>
+
+                        <p class="text-platinum text-sm text-center">
+                            Our team will respond within 24 hours during business days.
+                        </p>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="space-y-8 animate-on-scroll">
+                    <div class="glass-card p-8">
+                        <h4 class="text-white text-xl font-semibold mb-6">Direct Contact</h4>
+
+                        <div class="space-y-6">
+                            <div class="contact-item">
+                                <span class="text-2xl">📧</span>
+                                <div>
+                                    <div class="font-semibold text-white">Executive Inquiries</div>
+                                    <a href="mailto:info@xenithwfm.com" class="text-platinum hover:text-white transition-colors">info@xenithwfm.com</a>
+                                    <p class="text-platinum text-sm mt-1">Response within 24 hours</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <span class="text-2xl">📱</span>
+                                <div>
+                                    <div class="font-semibold text-white">Global Hotline</div>
+                                    <a href="tel:9709802812" class="text-platinum hover:text-white transition-colors">(970) 980-2812</a>
+                                    <p class="text-platinum text-sm mt-1">Available 24/7 for urgent matters</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <span class="text-2xl">🌍</span>
+                                <div>
+                                    <div class="font-semibold text-white">Global Offices</div>
+                                    <div class="text-platinum text-sm space-y-1">
+                                        <div>Singapore • Los Angeles • Gurgaon</div>
+                                        <div>Mumbai • Bangalore • Ahmedabad</div>
+                                        <div>Jaipur • Dubai</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-8">
+                        <h4 class="text-white text-xl font-semibold mb-6">Why Choose Xenith?</h4>
+
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3">
+                                <div class="w-6 h-6 bg-gold rounded-full flex items-center justify-center text-rich-black font-bold text-xs mt-1">✓</div>
+                                <div>
+                                    <div class="text-white font-medium">Confidential Process</div>
+                                    <p class="text-platinum text-sm">Complete discretion guaranteed</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <div class="w-6 h-6 bg-gold rounded-full flex items-center justify-center text-rich-black font-bold text-xs mt-1">✓</div>
+                                <div>
+                                    <div class="text-white font-medium">Global Network</div>
+                                    <p class="text-platinum text-sm">Access to elite executives worldwide</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <div class="w-6 h-6 bg-gold rounded-full flex items-center justify-center text-rich-black font-bold text-xs mt-1">✓</div>
+                                <div>
+                                    <div class="text-white font-medium">Proven Results</div>
+                                    <p class="text-platinum text-sm">92% success rate, 250+ placements</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <div class="w-6 h-6 bg-gold rounded-full flex items-center justify-center text-rich-black font-bold text-xs mt-1">✓</div>
+                                <div>
+                                    <div class="text-white font-medium">Rapid Delivery</div>
+                                    <p class="text-platinum text-sm">60-day average placement time</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Luxury Footer -->
-    <footer id="contact" class="luxury-footer py-32">
+    <footer class="luxury-footer py-32">
         <div class="container">
             <div class="grid md:grid-cols-2 gap-12 mb-20">
                 <div class="footer-section animate-on-scroll">
@@ -422,255 +599,6 @@
         </div>
     </footer>
 
-    <script>
-        // Enhanced JavaScript with error handling and progressive enhancement
-        (function() {
-            'use strict';
-
-            // Feature detection and progressive enhancement
-            const supportsIntersectionObserver = 'IntersectionObserver' in window;
-            const supportsScrollBehavior = 'scrollBehavior' in document.documentElement.style;
-
-            // Mobile Navigation
-            function initMobileNavigation() {
-                const mobileMenuButton = document.querySelector('.mobile-menu');
-                const mobileNav = document.querySelector('.mobile-nav');
-
-                if (!mobileMenuButton || !mobileNav) {
-                    console.warn('Mobile navigation elements not found');
-                    return;
-                }
-
-                mobileMenuButton.addEventListener('click', function() {
-                    const isExpanded = this.getAttribute('aria-expanded') === 'true';
-
-                    // Toggle navigation
-                    mobileNav.classList.toggle('active');
-
-                    // Update ARIA attributes
-                    this.setAttribute('aria-expanded', !isExpanded);
-
-                    // Update button text
-                    this.textContent = isExpanded ? '☰' : '✕';
-                });
-
-                // Close mobile nav when clicking links
-                mobileNav.querySelectorAll('a').forEach(link => {
-                    link.addEventListener('click', function() {
-                        mobileNav.classList.remove('active');
-                        mobileMenuButton.setAttribute('aria-expanded', 'false');
-                        mobileMenuButton.textContent = '☰';
-                    });
-                });
-
-                // Close mobile nav on escape key
-                document.addEventListener('keydown', function(e) {
-                    if (e.key === 'Escape' && mobileNav.classList.contains('active')) {
-                        mobileNav.classList.remove('active');
-                        mobileMenuButton.setAttribute('aria-expanded', 'false');
-                        mobileMenuButton.textContent = '☰';
-                        mobileMenuButton.focus();
-                    }
-                });
-            }
-
-            // Luxury Header Scroll Effect
-            function initHeaderScrollEffect() {
-                const header = document.querySelector('.luxury-header');
-                if (!header) {
-                    console.warn('Header element not found');
-                    return;
-                }
-
-                let ticking = false;
-
-                function updateHeader() {
-                    if (window.scrollY > 100) {
-                        header.classList.add('scrolled');
-                    } else {
-                        header.classList.remove('scrolled');
-                    }
-                    ticking = false;
-                }
-
-                function requestTick() {
-                    if (!ticking) {
-                        requestAnimationFrame(updateHeader);
-                        ticking = true;
-                    }
-                }
-
-                window.addEventListener('scroll', requestTick, { passive: true });
-            }
-
-            // Scroll Animation Observer with fallback
-            function initScrollAnimations() {
-                const animatedElements = document.querySelectorAll('.animate-on-scroll');
-
-                if (!animatedElements.length) return;
-
-                if (supportsIntersectionObserver) {
-                    const observerOptions = {
-                        threshold: 0.1,
-                        rootMargin: '0px 0px -50px 0px'
-                    };
-
-                    const observer = new IntersectionObserver((entries) => {
-                        entries.forEach(entry => {
-                            if (entry.isIntersecting) {
-                                entry.target.classList.add('animated');
-                                observer.unobserve(entry.target); // Stop observing once animated
-                            }
-                        });
-                    }, observerOptions);
-
-                    animatedElements.forEach(el => {
-                        observer.observe(el);
-                    });
-                } else {
-                    // Fallback for browsers without IntersectionObserver
-                    animatedElements.forEach(el => {
-                        el.classList.add('animated');
-                    });
-                }
-            }
-
-            // Enhanced smooth scrolling with fallback
-            function initSmoothScrolling() {
-                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                    anchor.addEventListener('click', function (e) {
-                        e.preventDefault();
-                        const targetId = this.getAttribute('href');
-                        const target = document.querySelector(targetId);
-
-                        if (!target) {
-                            console.warn(`Target element ${targetId} not found`);
-                            return;
-                        }
-
-                        if (supportsScrollBehavior) {
-                            target.scrollIntoView({
-                                behavior: 'smooth',
-                                block: 'start'
-                            });
-                        } else {
-                            // Fallback smooth scroll implementation
-                            const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - 80;
-                            const startPosition = window.pageYOffset;
-                            const distance = targetPosition - startPosition;
-                            const duration = 800;
-                            let start = null;
-
-                            function animation(currentTime) {
-                                if (start === null) start = currentTime;
-                                const timeElapsed = currentTime - start;
-                                const run = ease(timeElapsed, startPosition, distance, duration);
-                                window.scrollTo(0, run);
-                                if (timeElapsed < duration) requestAnimationFrame(animation);
-                            }
-
-                            function ease(t, b, c, d) {
-                                t /= d / 2;
-                                if (t < 1) return c / 2 * t * t + b;
-                                t--;
-                                return -c / 2 * (t * (t - 2) - 1) + b;
-                            }
-
-                            requestAnimationFrame(animation);
-                        }
-                    });
-                });
-            }
-
-            // Typing Animation
-            function initTypingAnimation() {
-                const typingText = document.querySelector('.typing-text');
-                const text = "Where Vision Meets Opportunity";
-                let index = 0;
-
-                function type() {
-                    if (index < text.length) {
-                        typingText.textContent += text.charAt(index);
-                        index++;
-                        setTimeout(type, 100);
-                    }
-                }
-
-                setTimeout(type, 1000); // Start after 1 second
-            }
-
-            // Animated Counters
-            function initAnimatedCounters() {
-                const counters = document.querySelectorAll('.hero-stats .stat-number');
-                const speed = 200;
-
-                counters.forEach(counter => {
-                    const target = +counter.getAttribute('data-target');
-                    const increment = target / speed;
-
-                    const updateCount = () => {
-                        const count = +counter.innerText;
-                        if (count < target) {
-                            counter.innerText = Math.ceil(count + increment);
-                            setTimeout(updateCount, 1);
-                        } else {
-                            counter.innerText = target;
-                        }
-                    };
-
-                    // Start animation when element is visible
-                    const observer = new IntersectionObserver((entries) => {
-                        entries.forEach(entry => {
-                            if (entry.isIntersecting) {
-                                updateCount();
-                                observer.unobserve(entry.target);
-                            }
-                        });
-                    });
-
-                    observer.observe(counter);
-                });
-            }
-
-            // Initialize all features when DOM is ready
-            function init() {
-                try {
-                    initMobileNavigation();
-                    initHeaderScrollEffect();
-                    initScrollAnimations();
-                    initSmoothScrolling();
-
-                    initAnimatedCounters();
-                } catch (error) {
-                    console.error('Error initializing website features:', error);
-                }
-            }
-
-            // DOM ready check
-            if (document.readyState === 'loading') {
-                document.addEventListener('DOMContentLoaded', init);
-            } else {
-                init();
-            }
-
-            // Add screen reader only class for better accessibility
-            const style = document.createElement('style');
-            style.textContent = `
-                .sr-only {
-                    position: absolute;
-                    width: 1px;
-                    height: 1px;
-                    padding: 0;
-                    margin: -1px;
-                    overflow: hidden;
-                    clip: rect(0, 0, 0, 0);
-                    white-space: nowrap;
-                    border: 0;
-                }
-            `;
-            document.head.appendChild(style);
-
-        })();
-    </script>
+    <script src="scripts.js"></script>
 </body>
 </html>

@@ -614,6 +614,170 @@ textarea:focus {
     outline-offset: 2px;
 }
 
+/* PREMIUM FORM STYLING */
+.form-group {
+    position: relative;
+}
+
+.form-label {
+    display: block;
+    color: var(--platinum);
+    font-weight: 500;
+    font-size: var(--text-sm);
+    margin-bottom: var(--space-2);
+    font-family: var(--font-display);
+}
+
+.form-input {
+    width: 100%;
+    padding: var(--space-4) var(--space-5);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-lg);
+    color: var(--pure-white);
+    font-size: var(--text-base);
+    font-family: var(--font-body);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--gold);
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+    transform: translateY(-1px);
+}
+
+.form-input::placeholder {
+    color: var(--silver);
+    opacity: 0.8;
+}
+
+.form-input:invalid:not(:placeholder-shown) {
+    border-color: #E74C3C;
+    background: rgba(231, 76, 60, 0.05);
+}
+
+.form-input:invalid:not(:placeholder-shown):focus {
+    box-shadow: 0 0 0 2px rgba(231, 76, 60, 0.2);
+}
+
+.form-input:valid:not(:placeholder-shown) {
+    border-color: var(--emerald);
+    background: rgba(46, 204, 113, 0.05);
+}
+
+/* Textarea specific styling */
+textarea.form-input {
+    resize: vertical;
+    min-height: 120px;
+    font-family: var(--font-body);
+}
+
+/* Select styling */
+select.form-input {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23C4C4C8' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right var(--space-3) center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    padding-right: var(--space-10);
+    cursor: pointer;
+}
+
+select.form-input option {
+    background: var(--charcoal);
+    color: var(--platinum);
+    padding: var(--space-2);
+}
+
+/* Checkbox styling */
+.form-checkbox {
+    width: 18px;
+    height: 18px;
+    border-radius: var(--radius-sm);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    appearance: none;
+    position: relative;
+}
+
+.form-checkbox:checked {
+    background: var(--gradient-accent);
+    border-color: var(--gold);
+}
+
+.form-checkbox:checked::after {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--rich-black);
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.form-checkbox:focus {
+    outline: 2px solid var(--gold);
+    outline-offset: 2px;
+}
+
+/* Form submission states */
+.form-loading .btn {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.form-loading .btn::after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+    border: 2px solid transparent;
+    border-top: 2px solid currentColor;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Form success/error states */
+.form-success {
+    background: rgba(46, 204, 113, 0.1);
+    border: 1px solid var(--emerald);
+    color: var(--emerald);
+    padding: var(--space-4);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--space-6);
+    text-align: center;
+}
+
+.form-error {
+    background: rgba(231, 76, 60, 0.1);
+    border: 1px solid #E74C3C;
+    color: #E74C3C;
+    padding: var(--space-4);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--space-6);
+    text-align: center;
+}
+
+/* Button full width utility */
+.w-full {
+    width: 100%;
+}
+
+/* Space utilities for forms */
+.space-y-1 > * + * { margin-top: 0.25rem; }
+.space-y-4 > * + * { margin-top: var(--space-4); }
+.space-y-6 > * + * { margin-top: var(--space-6); }
+
 /* Improved contrast for better accessibility */
 .text-platinum {
     color: #E0E0E4; /* Improved contrast ratio */
