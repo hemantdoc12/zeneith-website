@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - Xenith Executive Search</title>
+    <meta name="description" content="The page you're looking for could not be found. Return to Xenith Executive Search homepage.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="logo.jpeg">
+    <link rel="apple-touch-icon" href="logo.jpeg">
+
+    <!-- Design System -->
+    <link rel="stylesheet" href="design-system.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Preload Critical Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"></noscript>
+</head>
+
+<body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Luxury Header -->
+    <header class="luxury-header" role="banner">
+        <div class="container">
+            <div class="flex items-center justify-between py-4">
+                <a href="/">
+                    <img src="logo.jpeg" alt="Xenith Executive Search" class="header-logo">
+                </a>
+                <a href="/" class="btn btn-primary">Return Home</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 404 Section -->
+    <main id="main-content">
+        <section class="hero-section">
+            <div class="hero-grid"></div>
+            <div class="container text-center">
+                <div class="hero-content mx-auto">
+                    <h1 class="hero-title mb-8">
+                        Page <span class="text-luxury">Not Found</span>
+                    </h1>
+                    <p class="hero-subtitle mb-12">
+                        The page you're looking for doesn't exist or has been moved.
+                        Let us help you find what you need.
+                    </p>
+                    <div class="flex justify-center gap-6">
+                        <a href="/" class="btn btn-primary btn-lg">Return Home</a>
+                        <a href="/#contact" class="btn btn-secondary btn-lg">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Luxury Footer -->
+    <footer class="luxury-footer py-16">
+        <div class="container text-center">
+            <div class="mb-8">
+                <img src="logo.jpeg" alt="Xenith Executive Search" class="header-logo mx-auto mb-4 opacity-90">
+                <p class="text-platinum mb-6 leading-relaxed font-light max-w-2xl mx-auto">
+                    Connecting visionary leaders with breakthrough opportunities worldwide.
+                </p>
+            </div>
+            <div class="border-t border-white/10 pt-6">
+                <p class="text-platinum font-light">© 2024 Xenith Executive Search. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple 404 page script
+        (function() {
+            'use strict';
+
+            // Track 404 for analytics if needed
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'page_view', {
+                    page_title: '404 - Page Not Found',
+                    page_location: window.location.href
+                });
+            }
+        })();
+    </script>
+</body>
+</html>
