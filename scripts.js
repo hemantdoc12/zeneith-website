@@ -160,7 +160,7 @@
     // Animated Counters
     function initAnimatedCounters() {
         const counters = document.querySelectorAll('.hero-stats .stat-number');
-        const speed = 200;
+        const speed = 100;
 
         counters.forEach(counter => {
             const target = +counter.getAttribute('data-target');
